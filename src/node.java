@@ -17,7 +17,7 @@ public class node {
     public void setTypeH(){
         hFlag = true;
     }
-    public void setTypeI(){
+    public void setTypeI() {
         iFlag = true;
     }
 
@@ -43,6 +43,13 @@ public class node {
         }
         else
             System.out.println("no flag error");
+    }
+    public double[] getWeight(){
+        return weights;
+    }
+
+    public void adjustWeight(double[] newWeights){
+        weights = newWeights;
     }
 
     private void output(double val){
